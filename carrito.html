@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--CSS-->
+	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="carrito.css">
+	<!--js-->
+	<script src="./js/bebidas.js"></script>
+  	<script src="./js/cartService.js" defer></script>
+	<script src="./js/cart.js" defer></script>
+	<title>Carrito</title>
+</head>
+<body>
+  <header>
+		<nav>
+			<a href="./productos.html"><img src="./img/logo.png" alt="Logo" id="logo"></a>
+			<div>
+				<a href="#">MTB</a>
+				<a href="./historial.html">Historial</a>
+				<a href="./carrito.html" id="cart"><img src="./img/iconos/shopping-cart.png" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="carrito">
+			<p id="carrito-vacio">Che pibe, no hay productos en el carrito, raja de aca y <a href="./productos.html">elegi algunos productos</a> </p>
+			<section id="cart-container">
+			</section>
+
+			<section id="totales">
+				<div class="informacion">
+					<p>Total unidades: </p><span id="cantidad">0</span>
+				</div>
+				<div class="informacion">
+					<p>Total precio: </p> <p class="signo">$</p><span id="precio">0</span>
+				</div>
+				<p class="impuestos">Los impuestos de venta se calcularán durante el pago (si es aplicable)</p>
+				<div class="botones">
+					<button id="boton-pagar">Comprar</button>
+					<button id="reiniciar">Vaciar Carrito</button>
+				</div>
+			</section>
+		</section>
+	</main>
+
+	<footer>
+		<p>Todos los derechos reservados :V</p>
+	</footer>
+</body>
+</html>
